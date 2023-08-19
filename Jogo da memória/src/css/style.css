@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #e01717;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 90%;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    text-shadow: 3px 3px 3px black;
+}
+
+/*-----------------------class--------------------------*/
+.container{
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    border-radius: 10px;
+    background-image: url(https://static.significados.com.br/foto/500px-hammer-and-sickle.svg.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+    cursor: pointer;
+}
+
+.card:hover{
+    height: 135px;
+    width: 135px;
+    margin-top: -20px;
+    margin-left: 3px;
+    margin-right: 2px;
+}
+/*------------------------------------------------------*/
+
+.rotateCard{
+    animation: rotateCard 1s normal;
+}
+
+@keyframes rotateCard{
+    from{
+        transform: rotateX(0deg);
+    } to{
+        transform: rotateX(360deg);
+        background-image: url(https://static.significados.com.br/foto/500px-hammer-and-sickle.svg.png);
+    }
+}
+
+@keyframes mao {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+        background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mao_Zedong_1959.jpg/640px-Mao_Zedong_1959.jpg);
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-position: top;
+        background-size: cover;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+        cursor: pointer;
+        z-index: 0;
+    }
+}
+
+@keyframes polPot {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+        background: url(https://www.algosobre.com.br/images/stories/assuntos/biografias/Pol%20Pot.jpg);
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+        cursor: pointer;
+    }
+}
+
+@keyframes stalin {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+        background: url(https://cdn.pensador.com/img/authors/jo/se/joseph-stalin-l.jpg);
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+        cursor: pointer;
+    }
+}
+
+@keyframes lenin {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+        background: url(https://s4.static.brasilescola.uol.com.br/be/2020/04/vladimir-lenin.jpg);
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+        cursor: pointer;
+    }
+}
+
+@keyframes hochimi {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+        background: url(https://upload.wikimedia.org/wikipedia/commons/1/1c/Ho_Chi_Minh_1946.jpg);
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+        cursor: pointer;
+    }
+}
+
+@keyframes fidel {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+        background: url(https://upload.wikimedia.org/wikipedia/commons/4/4a/Fidel_Castro_1950s.jpg);
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+        cursor: pointer;
+    }
+}
+
+@keyframes che {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+        background: url(https://www.prensa-latina.cu/wp-content/uploads/2022/10/Ernesto-Che-Guevara.jpg);
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+        cursor: pointer;
+    }
+}
+
+@keyframes karl {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+        background: url(https://www.coladaweb.com/wp-content/uploads/2015/11/20151108-karl-max.jpg);
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.76);
+        cursor: pointer;
+    }
+}
+/*------------------------------------*/
