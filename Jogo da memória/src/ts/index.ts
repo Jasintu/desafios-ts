@@ -165,8 +165,8 @@ function checkValues(card1: any, card2: any){
     }else if(card1 === card2){
         console.log("boa porra")
     }else{
-        card1Position.style.removeProperty("animation")
         setTimeout(function(){
+            card1Position.style.removeProperty("animation")
             card2Position.style.removeProperty("animation")
         }, 1200)
         setTimeout(() => {
@@ -175,24 +175,26 @@ function checkValues(card1: any, card2: any){
         }, 2200);
         setTimeout(() => {
             card1Position.style.removeProperty("background")
-            card2Position.style.removeProperty("background")     
+            card2Position.style.removeProperty("background")  
+            card1 = ""
+            card2 = ""   
         }, 3190);
     }
 }
 
 
-    cards.forEach((card: any) => {
-        card.addEventListener("click", function deck(){
-            if(save === 0){
-                check(card)
-                card1 = getComputedStyle(card).animation;
-                card1Position = card
-                save = 1
-            }else if(save === 1){
-                check(card)
-                card2 = getComputedStyle(card).animation;
-                card2Position = card
-                checkValues(card1, card2) 
-            }
-        })
+cards.forEach((card: any) => {
+    card.addEventListener("click", function deck(){
+        if(save === 0){
+            check(card)
+            card1 = getComputedStyle(card).animation;
+            card1Position = card
+            save = 1
+        }else if(save === 1){
+            check(card)
+            card2 = getComputedStyle(card).animation;
+            card2Position = card
+            checkValues(card1, card2) 
+        }
     })
+})

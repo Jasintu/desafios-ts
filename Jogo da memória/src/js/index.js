@@ -2,14 +2,14 @@
 let cards = document.querySelectorAll(".card");
 var backCardsImg;
 (function (backCardsImg) {
-    backCardsImg["I1"] = "mao 1s normal";
-    backCardsImg["I2"] = "stalin 1s normal";
-    backCardsImg["I3"] = "lenin 1s normal";
-    backCardsImg["I4"] = "polPot 1s normal";
-    backCardsImg["I5"] = "hochimi 1s normal";
-    backCardsImg["I6"] = "fidel 1s normal";
-    backCardsImg["I7"] = "che 1s normal";
-    backCardsImg["I8"] = "karl 1s normal";
+    backCardsImg["I1"] = "mao 1s";
+    backCardsImg["I2"] = "stalin 1s";
+    backCardsImg["I3"] = "lenin 1s";
+    backCardsImg["I4"] = "polPot 1s";
+    backCardsImg["I5"] = "hochimi 1s";
+    backCardsImg["I6"] = "fidel 1s";
+    backCardsImg["I7"] = "che 1s";
+    backCardsImg["I8"] = "karl 1s";
 })(backCardsImg || (backCardsImg = {}));
 var URLimg;
 (function (URLimg) {
@@ -39,112 +39,112 @@ function check(card) {
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[0])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[1]) {
         cards[1].style.animation = (valoresEmbaralhados[1]);
         setTimeout(() => {
             card.style.background = `url(${valoresEmbaralhadosURL[1]}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[2]) {
         cards[2].style.animation = (valoresEmbaralhados[2]);
         setTimeout(() => {
             card.style.background = `url(${valoresEmbaralhadosURL[2]}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[3]) {
         cards[3].style.animation = (valoresEmbaralhados[3]);
         setTimeout(() => {
             card.style.background = `url(${valoresEmbaralhadosURL[3]}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[4]) {
         cards[4].style.animation = (valoresEmbaralhados[4]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[4])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[5]) {
         cards[5].style.animation = (valoresEmbaralhados[5]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[5])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[6]) {
         cards[6].style.animation = (valoresEmbaralhados[0]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[0])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[7]) {
         cards[7].style.animation = (valoresEmbaralhados[1]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[1])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[8]) {
         cards[8].style.animation = (valoresEmbaralhados[2]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[2])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[9]) {
         cards[9].style.animation = (valoresEmbaralhados[3]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[3])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[10]) {
         cards[10].style.animation = (valoresEmbaralhados[4]);
         setTimeout(() => {
             card.style.background = `url(${valoresEmbaralhadosURL[4]}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[11]) {
         cards[11].style.animation = (valoresEmbaralhados[5]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[5])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[12]) {
         cards[12].style.animation = (valoresEmbaralhados[6]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[6])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[13]) {
         cards[13].style.animation = (valoresEmbaralhados[7]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[7])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[14]) {
         cards[14].style.animation = (valoresEmbaralhados[6]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[6])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
     else if (card === cards[15]) {
         cards[15].style.animation = (valoresEmbaralhados[7]);
         setTimeout(() => {
             card.style.background = `url(${(valoresEmbaralhadosURL[7])}) no-repeat center center / cover `;
             card.style.removeProperty("animation");
-        }, 990);
+        }, 950);
     }
 }
 let save = 0;
@@ -153,17 +153,44 @@ let card2 = "";
 let card1Position = "";
 let card2Position = "";
 function checkValues(card1, card2) {
-    save = 0;
+    save = 3
+    setTimeout(() => {
+        save = 0
+    },3500)
     if (card1Position === card2Position) {
+        save = 3
+        setTimeout(function () {
+            card1Position.style.removeProperty("animation");
+            card1Position.classList.add("rotateCard");
+        }, 1500);
+        setTimeout(() => {
+            card1Position.style.removeProperty("background");
+            card1Position.classList.remove("rotateCard");
+        }, 2000);
+        setTimeout(() => {
+            save = 0
+        }, 1500000);
+        card1 = ""
+        card2 = ""
     }
     else if (card1 === card2) {
-        console.log("boa porra");
+        setTimeout(function (deck) {
+            card1Position.style.removeProperty("animation");
+            card2Position.style.removeProperty("animation");
+            card1Position.style.animation = "correct 1s infinite"
+            card2Position.style.animation = "correct 1s infinite"
+        }, 1200);
+        card1 = ""
+        card2 = ""
+        card2Position.removeEventListener("click", func)
+        card1Position.classList.remove("card")
+        console.log(func)
     }
     else {
-        card1Position.style.removeProperty("animation");
         setTimeout(function () {
+            card1Position.style.removeProperty("animation");
             card2Position.style.removeProperty("animation");
-        }, 1200);
+        }, 1300);
         setTimeout(() => {
             card1Position.classList.add("rotateCard");
             card2Position.classList.add("rotateCard");
@@ -171,11 +198,18 @@ function checkValues(card1, card2) {
         setTimeout(() => {
             card1Position.style.removeProperty("background");
             card2Position.style.removeProperty("background");
-        }, 3190);
+            card1Position.classList.remove("rotateCard");
+            card2Position.classList.remove("rotateCard");
+        }, 2800);
+        card1 = ""
+        card2 = ""
     }
 }
+
+let func = ""
+
 cards.forEach((card) => {
-    card.addEventListener("click", function deck() {
+    card.addEventListener("click", func = function deck() {
         if (save === 0) {
             check(card);
             card1 = getComputedStyle(card).animation;
