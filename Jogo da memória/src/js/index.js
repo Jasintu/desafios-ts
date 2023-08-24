@@ -1,5 +1,6 @@
 "use strict";
 let cards = document.querySelectorAll(".card");
+let container = document.querySelector(".container");
 var backCardsImg;
 (function (backCardsImg) {
     backCardsImg["I1"] = "mao 1s";
@@ -159,14 +160,12 @@ function checkValues(card1, card2) {
     },3500)
     if (card1Position === card2Position) {
         save = 3
-        setTimeout(function () {
-            card1Position.style.removeProperty("animation");
-            card1Position.classList.add("rotateCard");
-        }, 1500);
+        card1Position.style.removeProperty("animation");
+        card1Position.classList.add("rotateCard");
         setTimeout(() => {
             card1Position.style.removeProperty("background");
             card1Position.classList.remove("rotateCard");
-        }, 2000);
+        }, 1000);
         setTimeout(() => {
             save = 0
         }, 1500000);
@@ -174,7 +173,9 @@ function checkValues(card1, card2) {
         card2 = ""
     }
     else if (card1 === card2) {
-        setTimeout(function (deck) {
+        card1Position.style.pointerEvents = "none"
+        card2Position.style.pointerEvents = "none"
+        setTimeout(function () {
             card1Position.style.removeProperty("animation");
             card2Position.style.removeProperty("animation");
             card1Position.style.animation = "correct 1s infinite"
@@ -182,9 +183,6 @@ function checkValues(card1, card2) {
         }, 1200);
         card1 = ""
         card2 = ""
-        card2Position.removeEventListener("click", func)
-        card1Position.classList.remove("card")
-        console.log(func)
     }
     else {
         setTimeout(function () {
@@ -207,7 +205,6 @@ function checkValues(card1, card2) {
 }
 
 let func = ""
-
 cards.forEach((card) => {
     card.addEventListener("click", func = function deck() {
         if (save === 0) {
